@@ -1,0 +1,50 @@
+{
+  "name": "tutorial",
+  "version": "0.1.4",
+  "description": "Open a tutorial for Expo, EAS, React, and React Native",
+  "keywords": [
+    "tutorial",
+    "react-native",
+    "cli"
+  ],
+  "type": "module",
+  "main": "build/index.js",
+  "bin": "build/index.js",
+  "file": [
+    "build"
+  ],
+  "scripts": {
+    "start": "bun build ./src/index.ts --outdir ./build --target node",
+    "build": "bun build ./src/index.ts --outdir ./build --target node --minify",
+    "clean": "git clean ./build -xdf",
+    "lint": "eslint ."
+  },
+  "author": "Brent Vatne <brent@expo.dev>, Cedric van Putten <github@cedric.dev>",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@types/getenv": "^1.0.3",
+    "@types/js-yaml": "^4.0.9",
+    "arg": "^5.0.2",
+    "chalk": "^5.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-universe": "^12.0.0",
+    "getenv": "^1.0.0",
+    "js-yaml": "^4.1.0",
+    "open": "^10.0.3",
+    "ora": "^8.0.1",
+    "prettier": "^3.2.4",
+    "prompts": "^2.4.2"
+  },
+  "eslintConfig": {
+    "extends": "universe/node"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "bracketSameLine": true
+  }
+}

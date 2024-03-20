@@ -1,0 +1,19 @@
+name: Setup Project
+description: Prepare the project in GitHub Actions
+
+inputs:
+  bun-version:
+    description: Version of Bun to use
+    default: latest
+
+runs:
+  using: composite
+  steps:
+    - name: 🏗 Setup Node
+      uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: ${{ inputs.bun-version }}
+
+    - name: 📦 Install dependencies
+      run: bun install
+      shell: bash

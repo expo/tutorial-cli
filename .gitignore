@@ -1,0 +1,15 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# project
+build/
+
+# dependencies
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+package-lock.json
+yarn.lock
+
+# macOS
+.DS_Store
