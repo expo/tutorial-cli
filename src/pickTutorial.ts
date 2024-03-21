@@ -36,10 +36,10 @@ const choices: Choice[] = [
   },
   {
     id: '_blank',
-    title: 'Introduction to React Native',
-    description: `Learn about the React fundamentals and basic APIs and components that you'll need for any React Native app`,
+    title: 'Write native modules with Swift and Kotlin',
+    description: `Learn how to add native functionality to your app using the Expo Modules API `,
     value: {
-      url: 'https://reactnative.dev/docs/getting-started',
+      url: 'https://docs.expo.dev/modules/native-module-tutorial/',
       title: '_blank',
     },
   },
